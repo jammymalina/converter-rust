@@ -7,7 +7,7 @@ class ServerlessAwsExtendedVars {
     this.options = options || {};
     this.debug = this.options.debug || process.env.SLS_DEBUG;
     this.cache = {};
-    this.pluginName = 'ServerlessVpcDefaults';
+    this.pluginName = 'ServerlessAwsExtendedVars';
 
     const getVariable = this.getVpcVariableValue.bind(this);
     this.variableResolvers = { [this.variablePrefix]: getVariable };
@@ -17,7 +17,7 @@ class ServerlessAwsExtendedVars {
     if (!this.debug) {
       return;
     }
-    this.serverless.cli.consoleLog(`${this.pluginName}: ${logMessage}`);
+    this.serverless.cli.log(`${this.pluginName}: ${logMessage}`);
   }
 
   async getDefaultVpcId() {

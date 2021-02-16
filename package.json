@@ -1,0 +1,25 @@
+{
+  "name": "converter-rust",
+  "version": "1.0.0",
+  "description": "Unit converter API",
+  "scripts": {
+    "deploy": "sls deploy"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jammymalina/converter-rust.git"
+  },
+  "keywords": [],
+  "author": "Jakub Jantosik",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jammymalina/converter-rust/issues"
+  },
+  "homepage": "https://github.com/jammymalina/converter-rust#readme",
+  "devDependencies": {
+    "prettier": "2.2.x",
+    "serverless": "2.23.x",
+    "serverless-aws-extended-vars": "file:.serverless_plugins/serverless-aws-extended-vars",
+    "serverless-docker-autobuild": "file:.serverless_plugins/serverless-docker-autobuild"
+  }
+}

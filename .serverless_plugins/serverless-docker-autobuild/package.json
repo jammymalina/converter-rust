@@ -1,0 +1,11 @@
+{
+  "name": "serverless-docker-autobuild",
+  "version": "1.0.0",
+  "main": "index.js",
+  "keywords": [],
+  "author": "Jakub Jantosik",
+  "license": "MIT",
+  "dependencies": {
+    "ajv": "7.1.x"
+  }
+}
